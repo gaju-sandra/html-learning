@@ -4,3 +4,20 @@ WHAT TO LEARN!!
 
 this week we will be learning the basics o HTML AND THE CSS TO BE ABLE TO UNDERSTAND THE THE RONTEND
 CD
+Recommended Learning Order
+HTML document structure
+Headings
+Paragraphs
+Text formatting
+Lists
+Links
+Images
+Buttons
+Tables
+Forms
+Semantic HTML
+Multimedia (audio and video)
+div and span
+HTML attributes
+HTML entities
+Best practices
