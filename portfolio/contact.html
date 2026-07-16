@@ -13,12 +13,12 @@
     <main>
     <form>
 <label for="name">NAME</label>
-<input type="text" required>
+<input type="text" id="name" required>
 <br><br>
-<label>EMAIL</label>
-<input type="email" required>
+<label for="email">EMAIL</label>
+<input type="email" id="email" required>
 <br><br>
-<label>COUNTRY</label>
+<label for="country">COUNTRY</label>
 <select> 
    <option value="">Select your country</option>
     <option>Rwanda</option>
@@ -31,10 +31,10 @@
 
 </select>
 <br><br>
-<label>PHONE</label>
-<input type="tel" placeholder="+250 7XX XXX XXX" required>
+<label for="phone">PHONE</label>
+<input type="phone" placeholder="+250 7XX XXX XXX" required>
 <br><br>
-<label>GENDER
+<label for="gender">GENDER
 </label>
 <label>
     <input type="radio" name="gender">
@@ -48,13 +48,13 @@
 <input type="checkbox" name="like">Yes
 <input type="checkbox" name="like">No
 <br><br>
-<label>Upload receipts</label>
+<label for="file">Upload receipts</label>
 
 <input type="file"><br><br>
 
-<label>MESSAGE </label>
+<label for="message">MESSAGE </label>
 <textarea placeholder="Write your message here"></textarea><br><br>
-<label>Date</label>
+<label for="date">Date</label>
 
 <input type="date"><br><br>
 <label>Favorite Color</label>
