@@ -94,6 +94,12 @@ background-color:beige;
 
 }
 
+.profile img:hover {
+
+    transform:scale(1.1);
+
+}
+
 
 .bio-section{
 
@@ -147,4 +153,201 @@ background-color:beige;
 
     padding-left:20px;
 
+}
+.page-title{
+
+    text-align:center;
+
+    color:blueviolet;
+
+    margin-top:40px;
+
+}
+
+.projects-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin:40px;
+
+}
+
+.project-card{
+
+    width:300px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+}
+.project-card img{
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+.project-card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    background:blueviolet;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+}
+
+nav a:hover {
+
+    color: yellow;
+
+}
+
+.project-card:hover {
+
+    transform:translateY(-10px);
+
+}
+.project-card a:hover{
+
+    background:black;
+}
+
+h2:hover {
+
+    color:green;
+
+}
+
+footer:hover {
+
+    color:blue;
+
+}
+
+.project-card img:hover {
+
+    transform:scale(1.05);
+
+}
+
+.contact{
+
+    width:500px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+.contact{
+
+    width:500px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+.contact h2{
+
+    text-align:center;
+
+    color:blueviolet;
+
+}
+.contact h2 :hover{
+    color:green
+}
+
+.contact label{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+.contact input,
+.contact textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:5px;
+
+    border:1px solid gray;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+}
+
+.contact form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:blueviolet;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+.contact button:hover{
+   background-color:black;
 }
