@@ -1,6 +1,6 @@
 .profile{
-    width: 300px;
-    height: 150px;
+    width: 500px;
+    height: auto;
     background-color:beige ;
     border:5px solid blueviolet;
     margin:50px auto;
@@ -17,6 +17,7 @@
 .profile p {
     color: gray;
     font-size: 20px;
+    text-align: justify;
 }
 
 body {
@@ -25,4 +26,8 @@ body {
 
 
 
+}
+.profile h3{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
