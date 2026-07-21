@@ -3,7 +3,7 @@
     height: 150px;
     background-color:beige ;
     border:5px solid blueviolet;
-    margin:20px auto;
+    margin:50px auto;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -11,9 +11,18 @@
 
 .profile h2{
     color:blueviolet;
+    font-size: 30px;
 }
 
 .profile p {
     color: gray;
     font-size: 20px;
+}
+
+body {
+    background-color: lightgray;
+    font-family:'Times New Roman', Times, serif;
+
+
+
 }
