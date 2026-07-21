@@ -12,3 +12,8 @@
 .profile h2{
     color:blueviolet;
 }
+
+.profile p {
+    color: gray;
+    font-size: 20px;
+}
