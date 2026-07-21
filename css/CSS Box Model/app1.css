@@ -32,3 +32,11 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
 }
+
+.profile img{
+width: 200px;
+height:200px;
+margin: 20px ;
+border-radius: 60px;
+object-fit:cover;
+}
