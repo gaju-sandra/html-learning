@@ -1,5 +1,5 @@
 .profile{
-    width: 500px;
+    width: 700px;
     height: auto;
     background-color:beige ;
     border:5px solid blueviolet;
@@ -28,6 +28,7 @@ body {
 
 }
 .profile h3{
+    color:#000fff;
     text-transform: uppercase;
     text-decoration: underline;
 }
