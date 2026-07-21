@@ -39,3 +39,112 @@ footer{
 h1{
     text-align: center;
 }
+
+
+.profile{
+
+    width:700px;
+
+    background-color:beige;
+
+    border:5px solid blueviolet;
+
+    margin:50px auto;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+
+.profile h2{
+
+    text-align:center;
+
+    color:blueviolet;
+
+}
+
+body{
+background-color:beige;
+
+}
+
+.content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+
+.profile img{
+
+    width:200px;
+
+    height:200px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+.bio-section{
+
+    flex:1;
+
+}
+
+
+.bio-section h3{
+
+    color:#000fff;
+
+    text-transform:uppercase;
+
+}
+
+
+.about{
+
+    display:flex;
+
+    gap:40px;
+
+    width:80%;
+
+    margin:50px auto;
+
+    align-items:flex-start;
+
+}
+
+.about-image img{
+
+    width:250px;
+
+    border-radius:15px;
+
+}
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h2, h3{
+
+    color:blueviolet;
+
+}
+.about-text ul{
+
+    padding-left:20px;
+
+}
