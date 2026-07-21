@@ -21,6 +21,12 @@ footer{
 color: blue;
 font-size: larger;
 text-align:center;
-
-
 }
+
+img{
+    width: 200px;
+    display:block;
+    height: auto;
+margin: auto;
+}
+
