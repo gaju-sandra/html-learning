@@ -249,6 +249,13 @@ p{
     font-size: 32px;
     font-weight: bold;
 }
+.call:hover{
+    color:yellow;
+
+}
+h1:hover{
+    color:yellow
+}
 
 .tree-images a{
     display:inline-block;
@@ -271,4 +278,8 @@ nav a:hover{
 }
 .tree-images a:hover{
     background:yellowgreen;
+}
+
+.search{
+    text-align: right;
 }
