@@ -13,7 +13,7 @@ nav a{
     text-decoration: none;
     margin:15px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 h1{
@@ -86,4 +86,57 @@ font-size: x-large;
 font-weight: bold;
 font-size: x-large;
 }
+h2{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.tree-images{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap:wrap;
 
+    margin:40px;
+   
+}
+.trees{
+    width:700px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+}
+.trees img{
+    width:100%;
+
+    border-radius:10px;
+}
+
+.about-description{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+
+}
+.about {
+    display: flex;
+    justify-content: center;
+}
+.about-description {
+    width: 80%;
+    margin: 30px auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
+    text-align: justify;
+    color: black;
+    line-height: 1.6;
+}
