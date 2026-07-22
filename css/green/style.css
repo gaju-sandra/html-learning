@@ -283,3 +283,39 @@ nav a:hover{
 .search{
     text-align: right;
 }
+.search input{
+    
+    width:20%;
+
+    padding:12px;
+
+    margin-top: 10px;
+
+    border:1px solid gray;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+}
+.search button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:yellowgreen;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+.search button:hover{
+    background-color: green;
+}
