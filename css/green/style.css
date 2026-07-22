@@ -82,6 +82,9 @@ font-size: 32px;
     font-size: 50px;
 
 }
+.menu-read h3:hover{
+    color:yellowgreen
+}
 .quotes{
 font-weight: bold;
 font-size: x-large;
@@ -92,6 +95,9 @@ h2{
     font-weight: bold;
     font-size: 48px;
 }
+h2:hover{
+    color:yellowgreen;
+}
 .tree-images{
     display: flex;
     justify-content: center;
@@ -100,6 +106,13 @@ h2{
 
     margin:40px;
    
+}
+.trees:hover:hover{
+    transform: scaleX(1.05);
+}
+
+.tree-images:hover{
+    transform: translate(-10px);
 }
 .trees{
     width:700px;
@@ -235,4 +248,27 @@ p{
     color: white;
     font-size: 32px;
     font-weight: bold;
+}
+
+.tree-images a{
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    background: green;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+}
+nav a:hover{
+    color:yellow;
+}
+.tree-images a:hover{
+    background:yellowgreen;
 }
