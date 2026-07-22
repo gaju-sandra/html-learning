@@ -231,3 +231,8 @@ p{
 .contact button:hover{
    background-color:black;
 }
+.call{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
