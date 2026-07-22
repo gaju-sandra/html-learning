@@ -1,0 +1,16 @@
+header{
+ background-color: green;   
+color: beige;
+padding: 20px;
+
+}
+
+nav{
+    margin-top: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin:15px;
+    font-weight: bold;
+}
