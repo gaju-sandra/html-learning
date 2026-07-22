@@ -29,7 +29,7 @@ body{
 }
 .hero-video video{
     width: 100%;
-    height: 600px;
+    height: 800px;
     object-fit: cover;
     display: block;
 }
@@ -39,9 +39,10 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 color: white;
-text-align: center;
+text-align:right;
 width: 80%;
 text-align: justify;
+font-size:x-large;
 }
 .hero-description h2{
     text-size:50px;
@@ -56,4 +57,28 @@ footer{
 color: beige;
 padding: 30px;
 text-align: center;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    margin: 50px auto;
+    align-items: flex-start;
+}
+
+.menu-image img{
+    width: 250px;
+    border-radius: 15px;
+}
+
+.menu-read{
+    flex: 1;
+    text-align: justify;
+}
+.menu-read h3{
+    color: green;
+
+}
+.quotes{
+font-weight: bold;
 }
