@@ -93,12 +93,12 @@ h2{
     font-size: 48px;
 }
 .tree-images{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    justify-content: center;
     gap:30px;
-    
+    flex-wrap:wrap;
 
-    margin:40px auto;
+    margin:40px;
    
 }
 .trees{
@@ -117,8 +117,6 @@ h2{
 }
 .trees img{
     width:100%;
-    height: 300px;
-    object-fit: cover;
 
     border-radius:10px;
 }
@@ -144,9 +142,92 @@ h2{
 }
 .trees h3{
     color:green;
-    font-size: 24px;
+    font-size: 32px;
 
 }
 p{
     font-size: 24px;
+}
+
+.contact{
+
+    width:500px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+
+.contact h2{
+
+    text-align:center;
+
+    color:green;
+
+}
+
+
+.contact label{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+.contact input,
+.contact textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:5px;
+
+    border:1px solid gray;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+}
+
+.contact form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:green;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+.contact button:hover{
+   background-color:black;
 }
