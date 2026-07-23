@@ -99,7 +99,7 @@ footer {
 }
 
 .menu-image img:hover {
-    transform: scale(2.00);
+    transform: scale(1.05);
 }
 
 .menu-read {
@@ -109,7 +109,7 @@ footer {
 }
 
 p:hover {
-    font-size: 36px;
+    font-size: 34px;
 }
 
 .menu-read h3 {
@@ -145,9 +145,11 @@ h2 {
 h2:hover {
     color: yellowgreen;
     transform: translate(-10px);
-    transform: scale(2.00);
-    font-size: 50PX;
+    transform: scale(1.05);
+   
 }
+
+
 
 .tree-images {
     display: flex;
