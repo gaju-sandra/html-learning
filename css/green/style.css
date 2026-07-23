@@ -17,6 +17,9 @@ nav a{
     font-weight: bold;
     font-size: 40px;
 }
+nav a:hover{
+    transform: scale(1.05);
+}
 
 h1{
     text-align: center;
@@ -54,11 +57,15 @@ font-size:x-large;
 .hero-description h2{
     font-size:52px;
 }
-.hero-description p{
-font-size: 32px;
 
+.hero-description a{
+    font-size: 35px;
+    color:#f4f4f4;
 }
+.hero-description a:hover{
 
+    color:greenyellow
+}
 footer{
      background-color: green;   
 color: beige;
@@ -87,7 +94,7 @@ font-size: 32px;
     text-align: justify;
     font-size: 32px;
 }
-.menu-read p:hover{
+p:hover{
     font-size: 36px;
 }
 .menu-read h3{
@@ -274,11 +281,11 @@ p{
     font-weight: bold;
 }
 .call:hover{
-    color:yellow;
+    color:greenyellow;
 
 }
 h1:hover{
-    color:yellow
+    color:greenyellow
 }
 
 .tree-images a{
@@ -327,7 +334,8 @@ nav a:hover{
     cursor: pointer;
 }
 .search button:hover{
-    background-color: green;
+    
+    transform: scale(2.00);
 }
 
 .trees h3:hover{
