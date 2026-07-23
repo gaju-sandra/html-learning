@@ -79,6 +79,9 @@ font-size: 32px;
     text-align: justify;
     font-size: 32px;
 }
+.menu-read p:hover{
+    font-size: 36px;
+}
 .menu-read h3{
     color: green;
     font-size: 50px;
@@ -86,7 +89,8 @@ font-size: 32px;
 }
 .menu-read h3:hover{
     color:yellowgreen;
-    transform:scale(1.05)
+    transform:scale(1.05);
+    font-size:52px;
 }
 .quotes{
 font-weight: bold;
@@ -95,7 +99,7 @@ font-size: x-large;
 .quotes:hover{
     transform: scale(2.00);
     color: greenyellow;
-    
+    font-size: 48px;
 }
 h2{
     color: green;
