@@ -85,7 +85,8 @@ font-size: 32px;
 
 }
 .menu-read h3:hover{
-    color:yellowgreen
+    color:yellowgreen;
+    transform:scale(1.05)
 }
 .quotes{
 font-weight: bold;
@@ -118,6 +119,7 @@ h2:hover{
 
 .tree-images img:hover{
     transform: translate(-10px);
+    transform: scale(1.05);
 }
 .trees{
     width:700px;
