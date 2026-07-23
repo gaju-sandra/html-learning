@@ -256,7 +256,8 @@ p {
 
 
 .contact input,
-.contact textarea {
+.contact textarea
+.contact select {
 
     width: 100%;
 
@@ -272,6 +273,24 @@ p {
 
     box-sizing: border-box;
 
+}
+.contact select{
+    background-color: white;
+    color: #333;
+}
+.radio-group{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.radio-group label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 .contact form {
