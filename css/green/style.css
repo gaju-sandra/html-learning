@@ -73,6 +73,9 @@ font-size: 32px;
     width: 250px;
     border-radius: 15px;
 }
+.menu-image img:hover{
+    transform: scale(2.00);
+}
 
 .menu-read{
     flex: 1;
