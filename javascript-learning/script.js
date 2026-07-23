@@ -1,12 +1,5 @@
-const school = "AUCA";
+const button = document.getElementById("btn");
 
-let firstName = "Sandra";
-
-let lastName = "Gaju";
-
-let age = 22;
-
-console.log("School: " + school);
-console.log("First Name: " + firstName);
-console.log("Last Name: " + lastName);
-console.log("Age: " + age);
+button.addEventListener("click", function () {
+    alert("You clicked the button!");
+});
