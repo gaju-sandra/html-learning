@@ -92,6 +92,11 @@ font-size: 32px;
 font-weight: bold;
 font-size: x-large;
 }
+.quotes:hover{
+    transform: scale(2.00);
+    color: greenyellow;
+    
+}
 h2{
     color: green;
     text-align: center;
@@ -101,7 +106,8 @@ h2{
 h2:hover{
     color:yellowgreen;
     transform: translate(-10px);
-    transform: scale(1.05);
+    transform: scale(2.00);
+    font-size: 50PX;
 }
 .tree-images{
     display: flex;
