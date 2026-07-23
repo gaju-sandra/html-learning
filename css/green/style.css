@@ -28,10 +28,7 @@ h1 {
     font-size: 40px;
 }
 
-h1:hover {
-    transform: scale(1.05);
-    font-size: 42px;
-}
+
 
 body {
     margin: 0;
@@ -73,7 +70,8 @@ body {
 
 .hero-description a:hover {
 
-    color: greenyellow
+    color: greenyellow;
+    transform: scale(1.05);
 }
 
 footer {
@@ -108,7 +106,7 @@ footer {
     font-size: 32px;
 }
 
-p:hover {
+.hero p:hover {
     font-size: 34px;
 }
 
@@ -419,7 +417,7 @@ nav a:hover {
 
 .search button:hover {
 
-    transform: scale(2.00);
+    transform: scale(1.05);
 }
 
 .trees h3:hover {
