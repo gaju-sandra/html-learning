@@ -140,13 +140,6 @@ h2:hover{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
-
-}
-.about {
-    display: flex;
-    justify-content: center;
-}
-.about-description {
     width: 80%;
     margin: 30px auto;
     font-family: "Times New Roman", Times, serif;
@@ -154,7 +147,13 @@ h2:hover{
     text-align: justify;
     color: black;
     line-height: 1.6;
+
 }
+.about {
+    display: flex;
+    justify-content: center;
+}
+
 .trees h3{
     color:green;
     font-size: 32px;
