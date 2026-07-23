@@ -47,10 +47,10 @@ text-align: justify;
 font-size:x-large;
 }
 .hero-description h2{
-    text-size:50px;
+    font-size:50px;
 }
 .hero-description p{
-    text-size: 48px;
+font-size: 48px;
 
 }
 
