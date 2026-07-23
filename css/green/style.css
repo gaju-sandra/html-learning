@@ -307,3 +307,7 @@ nav a:hover{
 .search button:hover{
     background-color: green;
 }
+
+.trees h3:hover{
+    color: greenyellow;
+}
