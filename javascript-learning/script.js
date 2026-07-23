@@ -2,10 +2,11 @@ const school = "AUCA";
 
 let firstName = "Sandra";
 
+let lastName = "Gaju";
+
 let age = 22;
 
-alert("Welcome to Student:" + school  );
-
-alert("Student: " + firstName);
-
-alert("Age: " + age);
+console.log("School: " + school);
+console.log("First Name: " + firstName);
+console.log("Last Name: " + lastName);
+console.log("Age: " + age);
