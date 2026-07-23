@@ -6,7 +6,9 @@ padding: 30px;
 }
 
 nav{
-    margin-top: 10px;
+   display:flex;
+   align-items: center;
+   gap: 20px;
 }
 nav a{
     color: white;
@@ -281,41 +283,26 @@ nav a:hover{
 }
 
 .search{
-    text-align: right;
+   margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .search input{
-    
-    width:20%;
-
-    padding:12px;
-
-    margin-top: 10px;
-
-    border:1px solid gray;
-
-    border-radius:8px;
-
-    font-size:16px;
-
-    box-sizing:border-box;
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 16px;
 }
 .search button{
-
-    margin-top:20px;
-
-    padding:12px;
-
-    background:yellowgreen;
-
-    color:white;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
-    font-size: 24px;
-
+    margin-top: 0;      /* Remove the top margin */
+    padding: 10px 15px;
+    background: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .search button:hover{
     background-color: green;
