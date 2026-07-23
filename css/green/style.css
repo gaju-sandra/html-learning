@@ -1,79 +1,91 @@
-header{
- background-color: green;   
-color: beige;
-padding: 30px;
+header {
+    background-color: green;
+    color: beige;
+    padding: 30px;
 
 }
 
-nav{
-   display:flex;
-   align-items: center;
-   gap: 20px;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-nav a{
+
+nav a {
     color: white;
     text-decoration: none;
-    margin:15px;
+    margin: 15px;
     font-weight: bold;
     font-size: 40px;
 }
-nav a:hover{
+
+nav a:hover {
     transform: scale(1.05);
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 40px;
 }
-h1:hover{
+
+h1:hover {
     transform: scale(1.05);
-    font-size:42px ;
+    font-size: 42px;
 }
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#f4f4f4;
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
 }
-.hero-video{
+
+.hero-video {
     position: relative;
 }
-.hero-video video{
+
+.hero-video video {
     width: 100%;
     height: 800px;
     object-fit: cover;
     display: block;
 }
-.hero-description{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-text-align: center;
-width: 80%;
-text-align: justify;
-font-size:x-large;
-}
-.hero-description h2{
-    font-size:52px;
+
+.hero-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    text-align: justify;
+    font-size: x-large;
 }
 
-.hero-description a{
+.hero-description h2 {
+    font-size: 52px;
+}
+
+.hero-description a {
     font-size: 35px;
-    color:#f4f4f4;
+    color: #f4f4f4;
 }
-.hero-description a:hover{
 
-    color:greenyellow
+.hero-description a:hover {
+
+    color: greenyellow
 }
-footer{
-     background-color: green;   
-color: beige;
-padding: 30px;
-text-align: center;
-font-size: 32px;
+
+footer {
+    background-color: green;
+    color: beige;
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+    text-align: justify;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 30px;
     width: 80%;
@@ -81,92 +93,104 @@ font-size: 32px;
     align-items: flex-start;
 }
 
-.menu-image img{
+.menu-image img {
     width: 250px;
     border-radius: 15px;
 }
-.menu-image img:hover{
+
+.menu-image img:hover {
     transform: scale(2.00);
 }
 
-.menu-read{
+.menu-read {
     flex: 1;
     text-align: justify;
     font-size: 32px;
 }
-p:hover{
+
+p:hover {
     font-size: 36px;
 }
-.menu-read h3{
+
+.menu-read h3 {
     color: green;
     font-size: 50px;
 
 }
-.menu-read h3:hover{
-    color:yellowgreen;
-    transform:scale(1.05);
-    font-size:52px;
+
+.menu-read h3:hover {
+    color: yellowgreen;
+    transform: scale(1.05);
+    font-size: 52px;
 }
-.quotes{
-font-weight: bold;
-font-size: x-large;
+
+.quotes {
+    font-weight: bold;
+    font-size: x-large;
 }
-.quotes:hover{
+
+.quotes:hover {
     transform: scale(2.00);
     color: greenyellow;
     font-size: 48px;
 }
-h2{
+
+h2 {
     color: green;
     text-align: center;
     font-weight: bold;
     font-size: 48px;
 }
-h2:hover{
-    color:yellowgreen;
+
+h2:hover {
+    color: yellowgreen;
     transform: translate(-10px);
     transform: scale(2.00);
     font-size: 50PX;
 }
-.tree-images{
+
+.tree-images {
     display: flex;
     justify-content: center;
-    gap:30px;
-    flex-wrap:wrap;
+    gap: 30px;
+    flex-wrap: wrap;
 
-    margin:40px;
-   
+    margin: 40px;
+
 }
-.trees:hover{
+
+.trees:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
 
-.tree-images img:hover{
+.tree-images img:hover {
     transform: translate(-10px);
     transform: scale(1.05);
 }
-.trees{
-    width:700px;
 
-    background:white;
+.trees {
+    width: 700px;
 
-    border-radius:15px;
+    background: white;
 
-    padding:20px;
+    border-radius: 15px;
 
-    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    padding: 20px;
 
-    text-align:center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
 
 }
-.trees img{
-    width:100%;
 
-    border-radius:10px;
+.trees img {
+    width: 100%;
+
+    border-radius: 10px;
 }
 
-.about-description{
+.about-description {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
@@ -179,153 +203,164 @@ h2:hover{
     line-height: 1.6;
 
 }
+
 .about {
     display: flex;
     justify-content: center;
 }
 
-.trees h3{
-    color:green;
+.trees h3 {
+    color: green;
     font-size: 32px;
 
 }
-p{
+
+p {
     font-size: 24px;
 }
 
-.contact{
+.contact {
 
-    width:500px;
+    width: 500px;
+    min-height: 700px;
+    margin: 50px auto;
 
-    margin:50px auto;
+    background: white;
 
-    background:white;
+    padding: 80px;
 
-    padding:30px;
+    border-radius: 15px;
 
-    border-radius:15px;
-
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-
-}
-
-
-.contact h2{
-
-    text-align:center;
-
-    color:green;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
 
 
-.contact label{
+.contact h2 {
 
-    margin-top:15px;
+    text-align: center;
 
-    font-weight:bold;
+    color: green;
+
+}
+
+
+.contact label {
+
+    margin-top: 15px;
+
+    font-weight: bold;
 
 }
 
 
 .contact input,
-.contact textarea{
+.contact textarea {
 
-    width:100%;
+    width: 100%;
 
-    padding:12px;
+    padding: 12px;
 
-    margin-top:5px;
+    margin-top: 5px;
 
-    border:1px solid gray;
+    border: 1px solid gray;
 
-    border-radius:8px;
+    border-radius: 8px;
 
-    font-size:16px;
+    font-size: 16px;
 
-    box-sizing:border-box;
-
-}
-
-.contact form{
-
-    display:flex;
-
-    flex-direction:column;
+    box-sizing: border-box;
 
 }
 
-.contact button{
+.contact form {
 
-    margin-top:20px;
+    display: flex;
 
-    padding:12px;
-
-    background:green;
-
-    color:white;
-
-    border:none;
-
-    border-radius:8px;
-
-    cursor:pointer;
+    flex-direction: column;
 
 }
-.contact button:hover{
-   background-color:black;
+
+.contact button {
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    background: green;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
 }
-.call{
+
+.contact button:hover {
+    background-color: black;
+}
+
+.call {
     color: white;
     font-size: 32px;
     font-weight: bold;
 }
-.call:hover{
-    color:greenyellow;
+
+.call:hover {
+    color: greenyellow;
 
 }
-h1:hover{
-    color:greenyellow
+
+h1:hover {
+    color: greenyellow;
 }
 
-.tree-images a{
-    display:inline-block;
+.tree-images a {
+    display: inline-block;
 
-    margin-top:15px;
+    margin-top: 15px;
 
-    padding:10px 20px;
+    padding: 10px 20px;
 
     background: green;
 
-    color:white;
+    color: white;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    border-radius:8px;
+    border-radius: 8px;
 
 }
-nav a:hover{
-    color:yellow;
-}
-.tree-images a:hover{
-    background:yellowgreen;
+
+nav a:hover {
+    color: yellow;
 }
 
-.search{
-   margin-left: auto;
+.tree-images a:hover {
+    background: yellowgreen;
+}
+
+.search {
+    margin-left: auto;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.search input{
+
+.search input {
     width: 220px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid gray;
     font-size: 16px;
 }
-.search button{
-    margin-top: 0;      /* Remove the top margin */
+
+.search button {
+    margin-top: 0;
+    /* Remove the top margin */
     padding: 10px 15px;
     background: yellowgreen;
     color: white;
@@ -333,11 +368,12 @@ nav a:hover{
     border-radius: 8px;
     cursor: pointer;
 }
-.search button:hover{
-    
+
+.search button:hover {
+
     transform: scale(2.00);
 }
 
-.trees h3:hover{
+.trees h3:hover {
     color: greenyellow;
 }
