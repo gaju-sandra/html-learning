@@ -47,10 +47,10 @@ text-align: justify;
 font-size:x-large;
 }
 .hero-description h2{
-    font-size:50px;
+    font-size:52px;
 }
 .hero-description p{
-font-size: 48px;
+font-size: 32px;
 
 }
 
@@ -99,6 +99,8 @@ h2{
 }
 h2:hover{
     color:yellowgreen;
+    transform: translate(-10px);
+    transform: scale(1.05);
 }
 .tree-images{
     display: flex;
@@ -109,11 +111,12 @@ h2:hover{
     margin:40px;
    
 }
-.trees:hover:hover{
-    transform: scaleX(1.05);
+.trees:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
-.tree-images:hover{
+.tree-images img:hover{
     transform: translate(-10px);
 }
 .trees{
