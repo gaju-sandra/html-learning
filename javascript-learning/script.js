@@ -1,15 +1,28 @@
-// Get the HTML elements
+// Get HTML elements
 const input = document.getElementById("studentName");
 const button = document.getElementById("addBtn");
 const message = document.getElementById("message");
 
-// When the button is clicked...
+// When button is clicked
 button.addEventListener("click", function () {
 
-    // Get what the user typed
-    const name = input.value;
+    // Remove extra spaces
+    const name = input.value.trim();
 
-    // Display a message
-    message.textContent = "Welcome " + name + "!";
+    // Check if input is empty
+    if (name === "") {
+
+        message.textContent = "Please enter a student name.";
+        message.style.color = "red";
+
+    } else {
+
+        message.textContent = "Student " + name + " has been added successfully!";
+        message.style.color = "green";
+
+        // Clear the input
+        input.value = "";
+
+    }
 
 });
