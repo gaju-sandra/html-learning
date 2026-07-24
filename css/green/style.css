@@ -19,8 +19,10 @@ nav a {
     font-size: 40px;
 }
 
+
 nav a:hover {
-    transform: scale(1.05);
+    transform: scale(1.00);
+    color: blue;
 }
 
 h1 {
@@ -67,11 +69,15 @@ body {
     font-size: 35px;
     color: #f4f4f4;
 }
-
+#
 .hero-description a:hover {
 
     color: greenyellow;
     transform: scale(1.05);
+}
+
+h1{
+    ciolor
 }
 
 footer {
