@@ -31,80 +31,37 @@
 
 
 
-            <form>
+            <form id="contactForm">
 
-
-                <label for="name">
-                    Full Name
-                </label>
-
+                <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Enter your name">
+                <span class="error" id="nameError"></span>
 
-
-
-                <label for="email">
-                    Email Address
-                </label>
-
+                <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="Enter your email">
+                <span class="error" id="emailError"></span>
 
-                <label for="password">
-                    Password
-                </label>
-
+                <label for="password">Password</label>
                 <input type="password" id="password" placeholder="password">
-
+                <span class="error" id="passwordError"></span>
 
                 <label for="country">COUNTRY</label>
-                <select id="country">
-                    <option>Select your country</option>
-                    <option>Rwanda</option>
-                    <option>Uganda</option>
-                    <option>Kenya</option>
-                    <option>Tanzania</option>
-                    <option>Burundi</option>
-                    <option>South Sudan</option>
-                    <option>Democratic Republic of the Congo</option>
-
-                </select>
-
-
+                <select id="country"></select>
+                <span class="error" id="countryError"></span>
 
                 <label>Gender</label>
-
                 <div class="radio-group">
-
-                    <label>
-                        <input type="radio" name="gender" value="male">
-                        Male
-                    </label>
-
-                    <label>
-                        <input type="radio" name="gender" value="female">
-                        Female
-                    </label>
-
-                    <label>
-                        <input type="radio" name="gender" value="prefer not say">
-                        Prefer not to say
-                    </label>
-
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="prefer not say"> Prefer not to say</label>
                 </div>
+                <span class="error" id="genderError"></span>
 
-                <label for="message">
-                    Message
-                </label>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message"></textarea>
+                <span class="error" id="messageError"></span>
 
-
-                <textarea id="message" placeholder="Write your message">
-</textarea>
-
-
-
-                <button type="submit">
-                    Send Message
-                </button>
-
+                <button type="submit">Send Message</button>
 
             </form>
 
