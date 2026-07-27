@@ -19,6 +19,7 @@ navLinks.forEach(link => {
     if (link.href.includes(location.pathname.split("/").pop())) {
         link.style.fontWeight = "bold";
         link.style.textDecoration = "underline";
+        link.style.color="yellow";
     }
 });
 
@@ -146,16 +147,10 @@ if (contactForm) {
         }
 
         // Message: required, min 10 characters
-        if (!message) {
-            showError("messageError", "Message is required.");
-            valid = false;
-        } else if (message.length < 10) {
-            showError("messageError", "Message must be at least 10 characters.");
-            valid = false;
-        }
+        
 
         if (valid) {
-            alert("Message sent! Thank you, " + name + " 🌿");
+            alert("Message sent! Thank you, " + name );
             contactForm.reset();
         }
     });
