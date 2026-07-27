@@ -447,3 +447,17 @@ nav a:hover {
 .input-error {
     border: 1px solid red !important;
 }
+
+#scrollTop{
+     display:none;
+    position:fixed; 
+    bottom:30px; 
+    right:30px; 
+    padding:10px 15px; 
+    background:green; 
+    color:white; 
+    border:none; 
+    border-radius:50%; 
+    cursor:pointer; 
+    font-size:18px;
+}
