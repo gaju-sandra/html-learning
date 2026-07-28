@@ -74,7 +74,7 @@ padding: 0;
     font-size: 35px;
     color: #f4f4f4;
 }
-#
+
 .hero-description a:hover {
 
     color: greenyellow;
@@ -119,7 +119,7 @@ footer {
 }
 
 .hero p:hover {
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .menu-read h3 {
