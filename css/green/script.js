@@ -256,19 +256,11 @@ if (contactForm) {
         }
 
         // --- MESSAGE VALIDATION ---
-        if (!message) {
-            // Field is empty
-            showError("messageError", "Message is required.");
-            valid = false;
-        } else if (message.length < 10) {
-            // Message is too short to be meaningful
-            showError("messageError", "Message must be at least 10 characters.");
-            valid = false;
-        }
+        
 
         // If all fields passed validation, show success and reset the form
         if (valid) {
-            alert("Message sent! Thank you, " + name);
+            alert("Message sent!"+ name + " Thank you!" );
 
             // Clear all the form fields back to empty
             contactForm.reset();
