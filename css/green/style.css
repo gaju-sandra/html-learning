@@ -73,12 +73,14 @@ padding: 0;
 .hero-description a {
     font-size: 35px;
     color: #f4f4f4;
+    text-decoration: none;
 }
 
 .hero-description a:hover {
 
     color: greenyellow;
     transform: scale(1.05);
+
 }
 .hero{
     margin:0;
