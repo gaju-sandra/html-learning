@@ -578,3 +578,10 @@ nav a:hover {
     color: white;
     cursor: pointer;
 }
+.tree-video {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
