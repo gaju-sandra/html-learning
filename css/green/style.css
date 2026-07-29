@@ -91,7 +91,7 @@ padding: 0;
 footer {
     background-color: green;
     color: #e0f0e0;
-    padding: 10px 20px;
+    padding: 10px 60px;
 }
 
 .footer-container {
@@ -111,12 +111,12 @@ footer {
 .footer-middle h3,
 .footer-right h3 {
     color: yellowgreen;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
 .footer-left p {
-    font-size: 24px;
+    font-size: 28px;
     margin: 8px 0;
     color: white;
 }
@@ -139,7 +139,7 @@ footer {
 .footer-middle ul li a {
     color: #e0f0e0;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .footer-middle ul li a:hover {
@@ -155,7 +155,7 @@ footer {
 .social-links a {
     color: #e0f0e0;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .social-links a:hover {
@@ -165,7 +165,7 @@ footer {
 .footer-copy {
     text-align: center;
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     
 }
@@ -518,7 +518,7 @@ nav a:hover {
 }
 
 #scrollTop{
-    display:none;
+    display:block;
     position:fixed; 
     bottom:30px; 
     right:30px; 

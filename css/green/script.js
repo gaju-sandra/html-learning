@@ -66,11 +66,14 @@ const scrollBtn = document.getElementById("scrollTop");
 window.addEventListener("scroll", () => {
 
     // If the button exists, show it after scrolling 300px down, hide it otherwise
-    if (scrollBtn) scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    if (scrollBtn) scrollBtn.style.display = window.scrollY > 100 ? "block" : "none";
 });
 
 // When the scroll button is clicked, smoothly scroll back to the very top of the page
-if (scrollBtn) scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+if (scrollBtn) scrollBtn.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+});
 
 // =============================================
 // 4. POPULATE WORLDWIDE COUNTRIES DROPDOWN
