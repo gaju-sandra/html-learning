@@ -270,3 +270,80 @@ if (contactForm) {
         }
     });
 }
+
+
+// =============================================
+// 7. LIGHTBOX FOR IMAGES AND VIDEOS
+// =============================================
+
+// Create the overlay div and add it to the page
+const overlay = document.createElement("div");
+overlay.classList.add("lightbox-overlay");
+
+// Create the close button
+const closeBtn = document.createElement("span");
+closeBtn.classList.add("lightbox-close");
+closeBtn.textContent = "✕";
+overlay.appendChild(closeBtn);
+
+// Add the overlay to the body
+document.body.appendChild(overlay);
+
+// Listen for clicks on every .trees card
+document.querySelectorAll(".trees").forEach(card => {
+    card.addEventListener("click", () => {
+
+        // Remove any previous media inside the overlay
+        const existing = overlay.querySelector("img, video");
+        if (existing) existing.remove();
+
+        // Check if the card has an image or a video
+        const img = card.querySelector("img");
+        const vid = card.querySelector("video source");
+
+        if (img) {
+            // Create a big image and add it to the overlay
+            const bigImg = document.createElement("img");
+            bigImg.src = img.src;
+            overlay.appendChild(bigImg);
+        } else if (vid) {
+            // Create a fullscreen video and add it to the overlay
+            const bigVid = document.createElement("video");
+            bigVid.controls = true;
+            bigVid.autoplay = true;
+            const source = document.createElement("source");
+            source.src = vid.src;
+            source.type = "video/mp4";
+            bigVid.appendChild(source);
+            overlay.appendChild(bigVid);
+        }
+
+        // Show the overlay
+        overlay.classList.add("active");
+    });
+});
+
+// Close when clicking the close button
+closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    const vid = overlay.querySelector("video");
+    if (vid) vid.pause();
+});
+
+// Close when clicking outside the media
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+        overlay.classList.remove("active");
+        const vid = overlay.querySelector("video");
+        if (vid) vid.pause();
+    }
+});
+
+// Close when pressing Escape key
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        const vid = overlay.querySelector("video");
+        if (vid) vid.pause();
+    }
+});
