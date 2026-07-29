@@ -91,16 +91,24 @@ padding: 0;
 footer {
     background-color: green;
     color: #e0f0e0;
-    padding: 40px;
+    padding: 10px 20px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
 }
 
 .footer-left h3,
+.footer-middle h3,
 .footer-right h3 {
     color: yellowgreen;
     font-size: 28px;
@@ -116,6 +124,26 @@ footer {
 .footer-left i {
     color: yellowgreen;
     margin-right: 8px;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle ul li {
+    margin: 8px 0;
+}
+
+.footer-middle ul li a {
+    color: #e0f0e0;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer-middle ul li a:hover {
+    color: yellowgreen;
 }
 
 .social-links {
