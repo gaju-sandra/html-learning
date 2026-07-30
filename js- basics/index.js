@@ -58,10 +58,19 @@ console.log(selectedColors.length);
 
 
 //funtions
-
+//performing a task
 function greet(names, lastname){
 console.log("see this " +names+' ' + lastname);
 
 }
 greet('sandra','soso');
 greet('Gaju','divine');
+
+//calulating a value
+
+function square(number){
+
+    return number * number;
+}
+
+console.log(square(2))
