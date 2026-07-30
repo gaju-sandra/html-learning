@@ -46,5 +46,13 @@ console.log(person.age);
 let selection = "age";
 person [selection]= '15';
 console.log(person.age);
+//i was getting error because i wasn't having quotes on age and the selection
 
+
+//Array: is a data structure used to store or represent a list o things
+
+let selectedColors = ['red', 'blue'];
+selectedColors[2]= 'green'
+selectedColors[3]= 1;
+console.log(selectedColors.length);
 
