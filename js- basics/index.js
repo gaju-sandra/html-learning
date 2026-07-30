@@ -56,3 +56,12 @@ selectedColors[2]= 'green'
 selectedColors[3]= 1;
 console.log(selectedColors.length);
 
+
+//funtions
+
+function greet(names){
+console.log("see this" +names);
+
+}
+greet('sandra');
+greet('Gaju');
