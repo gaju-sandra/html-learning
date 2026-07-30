@@ -59,9 +59,9 @@ console.log(selectedColors.length);
 
 //funtions
 
-function greet(names){
-console.log("see this" +names);
+function greet(names, lastname){
+console.log("see this " +names+' ' + lastname);
 
 }
-greet('sandra');
-greet('Gaju');
+greet('sandra','soso');
+greet('Gaju','divine');
