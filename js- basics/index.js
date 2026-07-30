@@ -9,3 +9,14 @@ console.log(name);
 const interestrate=0.3;
 console.log(interestrate);
 
+//values we can assign to the variables
+//primitive value types and reerence types
+//primitive value: string, number, boolean, undefined,null
+
+let name1='Mosh';//String literal
+let age=30;//Number
+let isApproved= false;//Boolean literal
+let firstName= undefined;//(when u don't assign a variable)
+let selectedColor = null;
+console.log(name1);
+
