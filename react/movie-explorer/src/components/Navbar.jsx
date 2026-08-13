@@ -1,4 +1,4 @@
-funstion Navbar(){
+function Navbar(){
     return (
 <nav>
     <h1>Movie Explorer</h1>
