@@ -60,6 +60,8 @@ console.log(selectedColors.length);
 //funtions
 //performing a task
 function greet(names, lastname){
+
+    //+ sign is to concunate the two strings
 console.log("see this " +names+' ' + lastname);
 
 }
