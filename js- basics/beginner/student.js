@@ -10,7 +10,15 @@ addStudent.addEventListener("click", function() {
     let mark = Number(studentMark.value);
 
     let result;
-
+if (name==0){
+    result = "Please enter a name";
+}
+if (mark==0){
+    result = "Please enter a mark";
+}
+if (mark < 0 || mark > 100){
+    result = "Please enter a mark between 0 and 100";
+}
     if (mark >= 50) {
         result = "Passed";
     } else {
