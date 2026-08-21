@@ -9,9 +9,7 @@ addStudent.addEventListener("click", function() {
     let mark = Number(studentMark.value);
 
     let result;
-    function displayMessage(message) {
-    studentList.innerHTML += `<p>${message}</p>`;
-}
+    
 
     if (name.trim() === "") {
         result = "Please enter a name";
