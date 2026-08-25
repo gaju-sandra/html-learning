@@ -2,10 +2,22 @@ let studentName = document.getElementById("studentName");
 let studentMark = document.getElementById("studentMark");
 let addStudent = document.getElementById("addStudentBtn");
 let studentList = document.getElementById("studentlist");
-let student = [];
+let students = [];
 function displaymessage(message){
         studentList.innerHTML += `<p>${message}</p>`;
     }
+
+function displayStudents() {
+    studentList.innerHTML = "";
+
+    for (let i = 0; i < students.length; i++) {
+        displaymessage(
+            `Student Name: ${students[i].name}, Mark: ${students[i].mark}, Result: ${students[i].result}`
+        );
+    }
+}
+
+
 
 addStudent.addEventListener("click", function() {
 
@@ -28,15 +40,17 @@ else if (mark < 0 || mark > 100) {
         displaymessage(`Please ${name} ${result}`);
     } else if (mark >= 50) {
         result = "Passed";
-        displaymessage(`${name} got ${mark} so the student: ${result}`);
+    
     } else {
         result = "Failed";
-        displaymessage(`${name} got ${mark} so the student: ${result}`);
     }
 
     if (name.trim() !== "" && studentMark.value !== "" && mark >= 0 && mark <= 100) {
-        student.push({ name: name, mark: mark, result: result });
-        console.log(student);
+        students.push({ name: name, mark: mark, result: result });
+        displayStudents();
+        studentName.value = "";
+        studentMark.value = "";
+        
     }
 
 });
