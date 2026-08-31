@@ -64,6 +64,14 @@ else if (mark < 0 || mark > 100) {
             `Student Name: ${student.name}, Mark: ${student.mark}`
         );
     });
+
+    let studentNames = students.map(student => {
+    return student.name;
+});
+
+studentNames.forEach(function(name) {
+    displaymessage(`Student Name: ${name}`);
+});
         
     }
 
