@@ -10,11 +10,11 @@ function displaymessage(message){
 function displayStudents() {
     studentList.innerHTML = "";
 
-    for (let i = 0; i < students.length; i++) {
+    students.forEach(function(student) {
         displaymessage(
-            `Student Name: ${students[i].name}, Mark: ${students[i].mark}, Result: ${students[i].result}`
+            `Student Name: ${student.name}, Mark: ${student.mark}, Result: ${student.result}`
         );
-    }
+    });
 }
 
 
