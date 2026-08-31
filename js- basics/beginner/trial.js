@@ -16,17 +16,7 @@ function displayStudents() {
         );
     });
 
-    let passedStudents = students.filter(student => {
-        return student.mark >= 50;
-    });
-
-    displaymessage("----- Passed Students -----");
-
-    passedStudents.forEach(function(student) {
-        displaymessage(
-            `Student Name: ${student.name}, Mark: ${student.mark}`
-        );
-    });
+   
 }
 
 
@@ -62,6 +52,18 @@ else if (mark < 0 || mark > 100) {
         displayStudents();
         studentName.value = "";
         studentMark.value = "";
+
+         let passedStudents = students.filter(student => {
+        return student.mark >= 50;
+    });
+
+    displaymessage("Passed Students");
+
+    passedStudents.forEach(function(student) {
+        displaymessage(
+            `Student Name: ${student.name}, Mark: ${student.mark}`
+        );
+    });
         
     }
 
