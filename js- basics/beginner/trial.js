@@ -12,10 +12,9 @@ let studentList = document.getElementById("studentlist");
 // STUDENT ARRAY
 // ===============================
 
+let students = [];
 
 
-//localStorage allows the browser to remember the students.
-let students = JSON.parse(localStorage.getItem("students")) || [];
 // ===============================
 // DISPLAY MESSAGE
 // ===============================
@@ -59,20 +58,6 @@ function getResult(mark) {
     }
 
 }
-
-// ===============================
-// SAVE STUDENTS
-// ===============================
-
-function saveStudents() {
-
-    localStorage.setItem(
-        "students",
-        JSON.stringify(students)
-    );
-
-}
-
 
 
 // ===============================
@@ -127,7 +112,6 @@ addStudent.addEventListener("click", function() {
         result: result
     });
 
-    saveStudents();
 
     // ===============================
     // DISPLAY STUDENTS
@@ -144,48 +128,3 @@ addStudent.addEventListener("click", function() {
     studentMark.value = "";
 
 });
-
-
-// ===============================
-// STUDENTS PAGE
-// ===============================
-
-let studentsPageList = document.getElementById("studentList");
-
-function displayStudentsPage() {
-
-    if (!studentsPageList) {
-        return;
-    }
-
-    studentsPageList.innerHTML = "";
-
-    if (students.length === 0) {
-
-        studentsPageList.innerHTML =
-            "<p>No students have been added yet.</p>";
-
-        return;
-    }
-
-
-    // forEach()
-    students.forEach(function(student) {
-
-        studentsPageList.innerHTML += `
-            <div class="student-card">
-
-                <h3>${student.name}</h3>
-
-                <p>Mark: ${student.mark}</p>
-
-                <p>Result: ${student.result}</p>
-
-            </div>
-        `;
-
-    });
-
-}
-
-displayStudentsPage();
