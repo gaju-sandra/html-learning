@@ -12,7 +12,7 @@ let studentList = document.getElementById("studentlist");
 // STUDENT ARRAY
 // ===============================
 
-let students = [];
+let students = JSON.parse(localStorage.getItem("students")) || [];
 
 
 // ===============================
@@ -58,7 +58,18 @@ function getResult(mark) {
     }
 
 }
+// ===============================
+// SAVE STUDENTS
+// ===============================
 
+function saveStudents() {
+
+    localStorage.setItem(
+        "students",
+        JSON.stringify(students)
+    );
+
+}
 
 // ===============================
 // ADD STUDENT

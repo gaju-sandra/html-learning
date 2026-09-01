@@ -1,56 +1,52 @@
-```javascript
-// ===============================
+
+// ======================================================
 // STUDENTS PAGE
-// ===============================
+// ======================================================
 
 
-// ===============================
+// ======================================================
 // GET HTML ELEMENT
-// ===============================
+// ======================================================
 
-let studentList = document.getElementById("studentList");
-
-
-// ===============================
-// GET STUDENTS
-// ===============================
-
-// Get the students saved from the Home page
-let students = JSON.parse(localStorage.getItem("students")) || [];
+let studentList =
+    document.getElementById("studentList");
 
 
-// ===============================
+// ======================================================
+// GET STUDENTS FROM LOCAL STORAGE
+// ======================================================
+
+let students =
+    JSON.parse(localStorage.getItem("students")) || [];
+
+
+// ======================================================
 // DISPLAY STUDENTS
-// ===============================
+// ======================================================
 
 function displayStudents() {
-
-    // Make sure the element exists
-    if (!studentList) {
-        return;
-    }
-
 
     // Clear the previous content
     studentList.innerHTML = "";
 
 
-    // ===============================
+    // ==================================================
     // CHECK IF THERE ARE NO STUDENTS
-    // ===============================
+    // ==================================================
 
     if (students.length === 0) {
 
-        studentList.innerHTML =
-            "<p>No students have been added yet.</p>";
+        studentList.innerHTML = `
+            <p>No students have been added yet.</p>
+        `;
 
         return;
     }
 
 
-    // ===============================
+    // ==================================================
     // FOREACH()
-    // ===============================
+    // ==================================================
 
     students.forEach(function(student) {
 
@@ -73,9 +69,9 @@ function displayStudents() {
 }
 
 
-// ===============================
+// ======================================================
 // DISPLAY STUDENTS
-// ===============================
+// ======================================================
 
 displayStudents();
-```
+
