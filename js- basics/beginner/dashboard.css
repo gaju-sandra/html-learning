@@ -149,3 +149,8 @@ nav a:hover {
 #studentlist {
     margin-top: 25px;
 }
+ 
+.statistics-section {
+    margin-top: 50px;
+    text-align: center;
+}
