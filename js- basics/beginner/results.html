@@ -29,17 +29,39 @@
     <!-- Main content -->
     <main>
 
-        <section class="results-section">
+      <section class="results-section">
 
-            <h2>Student Results</h2>
+    <h2>Student Results</h2>
 
-            <p>View the results of all students.</p>
+    <p>View the results of all students.</p>
 
-            <div id="resultsList">
-                <!-- Results will be displayed here using JavaScript -->
-            </div>
 
-        </section>
+    <!-- ===============================
+         RESULT FILTER
+    =============================== -->
+
+    <label for="resultFilter">Filter Results:</label>
+
+    <select id="resultFilter">
+
+        <option value="all">All Students</option>
+
+        <option value="passed">Passed</option>
+
+        <option value="failed">Failed</option>
+
+    </select>
+
+
+    <!-- ===============================
+         RESULTS LIST
+    =============================== -->
+
+    <div id="resultsList">
+        <!-- Results will be displayed here -->
+    </div>
+
+</section>
 
     </main>
 
