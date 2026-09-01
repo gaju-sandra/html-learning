@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Statistics - Student Management System</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>STUDENT MANAGEMENT SYSTEM</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+            <a href="results.html">Results</a>
+            <a href="statistics.html">Statistics</a>
+        </nav>
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <section class="statistics-section">
+
+            <h2>Student Statistics</h2>
+
+            <p>View statistics about student performance.</p>
+
+            <div id="statistics">
+
+                <div>
+                    <h3>Total Students</h3>
+                    <p id="totalStudents">0</p>
+                </div>
+
+                <div>
+                    <h3>Average Mark</h3>
+                    <p id="averageMark">0</p>
+                </div>
+
+                <div>
+                    <h3>Highest Mark</h3>
+                    <p id="highestMark">0</p>
+                </div>
+
+                <div>
+                    <h3>Lowest Mark</h3>
+                    <p id="lowestMark">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="trial.js"></script>
+
+</body>
+
+</html>
+```
