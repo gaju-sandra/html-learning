@@ -1,3 +1,4 @@
+console.log("trial.js is working!");
 
 let studentName = document.getElementById("studentName");
 let studentMark = document.getElementById("studentMark");
@@ -125,5 +126,5 @@ addStudent.addEventListener("click", function() {
     studentName.value = "";
     studentMark.value = "";
 
-});;
+});
 ```
