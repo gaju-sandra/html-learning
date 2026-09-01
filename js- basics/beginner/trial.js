@@ -1,4 +1,6 @@
-console.log("trial.js is working!");
+// ===============================
+// GET HTML ELEMENTS
+// ===============================
 
 let studentName = document.getElementById("studentName");
 let studentMark = document.getElementById("studentMark");
@@ -28,8 +30,7 @@ function displayMessage(message) {
 
 function displayStudents() {
 
-    // Clear the previous list
-    studentList.innerHTML = "";
+    studentList.innerHTML = "<h3>Student Information</h3>";
 
     // forEach() goes through every student
     students.forEach(function(student) {
@@ -65,7 +66,7 @@ function getResult(mark) {
 
 addStudent.addEventListener("click", function() {
 
-    // Get values from the inputs
+    // Get values from inputs
     let name = studentName.value.trim();
     let mark = Number(studentMark.value);
 
@@ -127,4 +128,3 @@ addStudent.addEventListener("click", function() {
     studentMark.value = "";
 
 });
-```
