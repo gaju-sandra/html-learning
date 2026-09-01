@@ -1,3 +1,4 @@
+
 // ===============================
 // GET HTML ELEMENTS
 // ===============================
@@ -12,6 +13,7 @@ let studentList = document.getElementById("studentlist");
 // STUDENT ARRAY
 // ===============================
 
+// Get existing students from localStorage
 let students = JSON.parse(localStorage.getItem("students")) || [];
 
 
@@ -20,7 +22,9 @@ let students = JSON.parse(localStorage.getItem("students")) || [];
 // ===============================
 
 function displayMessage(message) {
+
     studentList.innerHTML += `<p>${message}</p>`;
+
 }
 
 
@@ -32,16 +36,18 @@ function displayStudents() {
 
     studentList.innerHTML = "<h3>Student Information</h3>";
 
-    // forEach() goes through every student
+
+    // forEach() goes through EVERY student
     students.forEach(function(student) {
 
         displayMessage(
-            `Student Name: ${student.name}, 
-             Mark: ${student.mark}, 
+            `Student Name: ${student.name},
+             Mark: ${student.mark},
              Result: ${student.result}`
         );
 
     });
+
 }
 
 
@@ -52,12 +58,18 @@ function displayStudents() {
 function getResult(mark) {
 
     if (mark >= 50) {
+
         return "Passed";
+
     } else {
+
         return "Failed";
+
     }
 
 }
+
+
 // ===============================
 // SAVE STUDENTS
 // ===============================
@@ -71,13 +83,28 @@ function saveStudents() {
 
 }
 
+
+// ===============================
+// DISPLAY EXISTING STUDENTS
+// ===============================
+
+// When Home page opens,
+// show students already saved.
+
+displayStudents();
+
+
 // ===============================
 // ADD STUDENT
 // ===============================
 
 addStudent.addEventListener("click", function() {
 
-    // Get values from inputs
+
+    // ===============================
+    // GET VALUES
+    // ===============================
+
     let name = studentName.value.trim();
     let mark = Number(studentMark.value);
 
@@ -88,7 +115,9 @@ addStudent.addEventListener("click", function() {
 
     if (name === "" || studentMark.value === "") {
 
-        displayMessage("Please enter both the name and mark.");
+        displayMessage(
+            "Please enter both the name and mark."
+        );
 
         return;
     }
@@ -100,7 +129,9 @@ addStudent.addEventListener("click", function() {
 
     if (mark < 0 || mark > 100) {
 
-        displayMessage("Please enter a mark between 0 and 100.");
+        displayMessage(
+            "Please enter a mark between 0 and 100."
+        );
 
         return;
     }
@@ -117,15 +148,31 @@ addStudent.addEventListener("click", function() {
     // CREATE STUDENT
     // ===============================
 
-    students.push({
+    let student = {
+
         name: name,
         mark: mark,
         result: result
-    });
+
+    };
 
 
     // ===============================
-    // DISPLAY STUDENTS
+    // ADD TO ARRAY
+    // ===============================
+
+    students.push(student);
+
+
+    // ===============================
+    // SAVE THE UPDATED ARRAY
+    // ===============================
+
+    saveStudents();
+
+
+    // ===============================
+    // DISPLAY ALL STUDENTS
     // ===============================
 
     displayStudents();
@@ -139,3 +186,4 @@ addStudent.addEventListener("click", function() {
     studentMark.value = "";
 
 });
+

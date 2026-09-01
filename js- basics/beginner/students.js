@@ -56,9 +56,7 @@ function displayStudents() {
 
                 <h3>${student.name}</h3>
 
-                <p>Mark: ${student.mark}</p>
-
-                <p>Result: ${student.result}</p>
+               
 
             </div>
 
