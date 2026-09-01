@@ -1,78 +1,129 @@
+
 let studentName = document.getElementById("studentName");
 let studentMark = document.getElementById("studentMark");
 let addStudent = document.getElementById("addStudentBtn");
 let studentList = document.getElementById("studentlist");
+
+
+// ===============================
+// STUDENT ARRAY
+// ===============================
+
 let students = [];
-function displaymessage(message){
-        studentList.innerHTML += `<p>${message}</p>`;
-    }
 
-function displayStudents() {
-    studentList.innerHTML = "";
 
-    students.forEach(function(student) {
-        displaymessage(
-            `Student Name: ${student.name}, Mark: ${student.mark}, Result: ${student.result}`
-        );
-    });
+// ===============================
+// DISPLAY MESSAGE
+// ===============================
 
-   
+function displayMessage(message) {
+    studentList.innerHTML += `<p>${message}</p>`;
 }
 
 
+// ===============================
+// DISPLAY ALL STUDENTS
+// ===============================
+
+function displayStudents() {
+
+    // Clear the previous list
+    studentList.innerHTML = "";
+
+    // forEach() goes through every student
+    students.forEach(function(student) {
+
+        displayMessage(
+            `Student Name: ${student.name}, 
+             Mark: ${student.mark}, 
+             Result: ${student.result}`
+        );
+
+    });
+}
+
+
+// ===============================
+// GET STUDENT RESULT
+// ===============================
+
+function getResult(mark) {
+
+    if (mark >= 50) {
+        return "Passed";
+    } else {
+        return "Failed";
+    }
+
+}
+
+
+// ===============================
+// ADD STUDENT
+// ===============================
 
 addStudent.addEventListener("click", function() {
 
-    let name = studentName.value;
+    // Get values from the inputs
+    let name = studentName.value.trim();
     let mark = Number(studentMark.value);
-    let result;
 
-    
 
-   
-if(name.trim() ==="" && studentMark.value ===""){
-    result = "Please enter a name and mark";
-    displaymessage(result);}
-    else if (name.trim() === "" || studentMark.value === "") {
-        result =" please fill in the required fields";
-        displaymessage(result);
-    }
-else if (mark < 0 || mark > 100) {
-        result = "enter a mark between 0 and 100";
-        displaymessage(`Please ${name} ${result}`);
-    } else if (mark >= 50) {
-        result = "Passed";
-    
-    } else {
-        result = "Failed";
+    // ===============================
+    // VALIDATE EMPTY FIELDS
+    // ===============================
+
+    if (name === "" || studentMark.value === "") {
+
+        displayMessage("Please enter both the name and mark.");
+
+        return;
     }
 
-    if (name.trim() !== "" && studentMark.value !== "" && mark >= 0 && mark <= 100) {
-        students.push({ name: name, mark: mark, result: result });
-        displayStudents();
-        studentName.value = "";
-        studentMark.value = "";
 
-         let passedStudents = students.filter(student => {
-        return student.mark >= 50;
+    // ===============================
+    // VALIDATE MARK
+    // ===============================
+
+    if (mark < 0 || mark > 100) {
+
+        displayMessage("Please enter a mark between 0 and 100.");
+
+        return;
+    }
+
+
+    // ===============================
+    // GET RESULT
+    // ===============================
+
+    let result = getResult(mark);
+
+
+    // ===============================
+    // CREATE STUDENT
+    // ===============================
+
+    students.push({
+        name: name,
+        mark: mark,
+        result: result
     });
 
-    displaymessage("Passed Students");
 
-    passedStudents.forEach(function(student) {
-        displaymessage(
-            `Student Name: ${student.name}, Mark: ${student.mark}`
-        );
-    });
+    // ===============================
+    // DISPLAY STUDENTS
+    // ===============================
 
-    let studentNames = students.map(student => {
-    return student.name;
-});
+    displayStudents();
 
-studentNames.forEach(function(name) {
-    displaymessage(`Student Name: ${name}`);
-});
-        
-    }
 
-});
+    // ===============================
+    // CLEAR INPUTS
+    // ===============================
+
+    studentName.value = "";
+    studentMark.value = "";
+
+});;
+```
