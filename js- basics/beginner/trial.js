@@ -13,8 +13,9 @@ let studentList = document.getElementById("studentlist");
 // STUDENT ARRAY
 // ===============================
 
-// Get existing students from localStorage
-let students = JSON.parse(localStorage.getItem("students")) || [];
+// Get students already saved in the browser
+let students =
+    JSON.parse(localStorage.getItem("students")) || [];
 
 
 // ===============================
@@ -23,30 +24,7 @@ let students = JSON.parse(localStorage.getItem("students")) || [];
 
 function displayMessage(message) {
 
-    studentList.innerHTML += `<p>${message}</p>`;
-
-}
-
-
-// ===============================
-// DISPLAY ALL STUDENTS
-// ===============================
-
-function displayStudents() {
-
-    studentList.innerHTML = "<h3>Student Information</h3>";
-
-
-    // forEach() goes through EVERY student
-    students.forEach(function(student) {
-
-        displayMessage(
-            `Student Name: ${student.name},
-             Mark: ${student.mark},
-             Result: ${student.result}`
-        );
-
-    });
+    studentList.innerHTML = `<p>${message}</p>`;
 
 }
 
@@ -85,26 +63,12 @@ function saveStudents() {
 
 
 // ===============================
-// DISPLAY EXISTING STUDENTS
-// ===============================
-
-// When Home page opens,
-// show students already saved.
-
-displayStudents();
-
-
-// ===============================
 // ADD STUDENT
 // ===============================
 
 addStudent.addEventListener("click", function() {
 
-
-    // ===============================
-    // GET VALUES
-    // ===============================
-
+    // Get values from inputs
     let name = studentName.value.trim();
     let mark = Number(studentMark.value);
 
@@ -138,13 +102,6 @@ addStudent.addEventListener("click", function() {
 
 
     // ===============================
-    // GET RESULT
-    // ===============================
-
-    let result = getResult(mark);
-
-
-    // ===============================
     // CREATE STUDENT
     // ===============================
 
@@ -152,30 +109,32 @@ addStudent.addEventListener("click", function() {
 
         name: name,
         mark: mark,
-        result: result
+        result: getResult(mark)
 
     };
 
 
     // ===============================
-    // ADD TO ARRAY
+    // ADD STUDENT TO ARRAY
     // ===============================
 
     students.push(student);
 
 
     // ===============================
-    // SAVE THE UPDATED ARRAY
+    // SAVE TO LOCAL STORAGE
     // ===============================
 
     saveStudents();
 
 
     // ===============================
-    // DISPLAY ALL STUDENTS
+    // SHOW SUCCESS MESSAGE
     // ===============================
 
-    displayStudents();
+    displayMessage(
+        "Student added successfully!"
+    );
 
 
     // ===============================
