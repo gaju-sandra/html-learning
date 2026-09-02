@@ -1,21 +1,28 @@
+import "./App.css";
+
 function App() {
- let customer = "sandra";
- let accountNumber = 123456789;
- let balance = 5000;
+  let customer = "Sandra";
+  let accountNumber = "123456789";
+  let balance = 5000;
 
   return (
-    <div>
+    <div className="bank-container">
+
       <h1>Bank Management System</h1>
-      <p>Welcome, {customer} to our bank</p>
-    <p> with the account of {accountNumber}</p>
-    
-    <p> your balance is: ${balance}</p>
 
+      <div className="account-card">
+        <h2>Welcome, {customer}</h2>
 
+        <p>Account Number: {accountNumber}</p>
 
+        <p className="balance">
+          Your Balance
+          <span>${balance}</span>
+        </p>
+      </div>
 
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
