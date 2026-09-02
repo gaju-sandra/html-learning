@@ -7,6 +7,7 @@ function App() {
     <div>
       <h1>Bank Management System</h1>
       <p>Welcome, {customer} to our bank</p>
+    <p> with the account of {accountNumber}</p>
     
     <p> your balance is: ${balance}</p>
 
