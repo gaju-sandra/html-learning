@@ -19,6 +19,11 @@ function App() {
           Your Balance
           <span>${balance}</span>
         </p>
+<div className="actions">
+          <button className="deposit-btn">Deposit</button>
+          <button className="withdraw-btn">Withdraw</button>
+        </div>
+
       </div>
 
     </div>

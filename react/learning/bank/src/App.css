@@ -47,3 +47,22 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.actions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button:hover {
+  opacity: 0.8;
+  color:blue;
+}
