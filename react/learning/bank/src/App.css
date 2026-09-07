@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color:#f4f6f8;
+  background-color: #f4f6f8;
 }
 
 .bank-container {
@@ -13,56 +13,198 @@ body {
 .bank-container h1 {
   text-align: center;
   margin-bottom: 30px;
- color: blue;
+color: #1a73e8;
+  font-size: 32px;
 }
 
+/* Account Card */
 .account-card {
   background-color: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #1a73e8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
 }
 
-.account-card h2 {
-  margin-top: 0;
-  color: blue
-  
+.account-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.account-card p {
-  font-size: 18px;
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
+.card-header h2 {
+  margin: 0;
+  color: #1a73e8;
+}
+
+.status-badge {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Balance */
 .balance {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 20px;
   background-color: #f4f6f8;
   border-radius: 10px;
 }
 
-.balance span {
-  font-size: 28px;
+.balance-amount {
+  font-size: 32px;
   font-weight: bold;
+  color: #1a73e8;
 }
 
+/* Action Buttons */
 .actions {
   display: flex;
   gap: 15px;
   margin-top: 25px;
 }
 
-.actions button {
+.deposit-btn, .withdraw-btn {
   padding: 12px 25px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
-.actions button:hover {
-  opacity: 0.8;
-  color:blue;
+.deposit-btn {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.withdraw-btn {
+  background-color: #c62828;
+  color: white;
+}
+
+.deposit-btn:hover, .withdraw-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* Input Form */
+.form-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-box p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.form-box input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.error {
+  color: #c62828;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.confirm-btn:hover {
+  background-color: #1558b0;
+}
+
+.cancel-btn:hover {
+  background-color: #bdbdbd;
+}
+
+/* Transaction History */
+.transaction-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-card h3 {
+  margin-top: 0;
+  color: #1a73e8;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.transaction-item.deposit {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.transaction-item.withdrawal {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: #888;
 }

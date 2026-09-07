@@ -93,7 +93,7 @@ function displayStatistics() {
     // SORT()
     // ===============================
 
-    let sortedMarks =
+    let lowsortedMarks =
         [...marks].sort(function(a, b) {
 
             return a - b;
@@ -106,15 +106,21 @@ function displayStatistics() {
     // ===============================
 
     lowestMark.textContent =
-        sortedMarks[0];
+        lowsortedMarks[0];
 
 
     // ===============================
     // HIGHEST MARK
     // ===============================
+let highsortedMarks =
+        [...marks].sort(function(a, b) {
 
+            return b - a;
+
+        });
     highestMark.textContent =
-        sortedMarks[sortedMarks.length - 1];
+        highsortedMarks[0];
+
 
 }
 

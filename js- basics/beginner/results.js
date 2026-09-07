@@ -111,7 +111,7 @@ function displayResults() {
     if (studentsToDisplay.length === 0) {
 
         resultsList.innerHTML =
-            "<p>No students found for this result.</p>";
+            "<p=>No students found for this result.</p>";
 
         return;
     }

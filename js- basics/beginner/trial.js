@@ -7,7 +7,7 @@ let studentName = document.getElementById("studentName");
 let studentMark = document.getElementById("studentMark");
 let addStudent = document.getElementById("addStudentBtn");
 let studentList = document.getElementById("studentlist");
-
+let studentId = document.getElementById("studentId");
 
 // ===============================
 // STUDENT ARRAY
@@ -92,7 +92,7 @@ addStudent.addEventListener("click", function() {
     // ===============================
 
     if (mark < 0 || mark > 100) {
-
+    
         displayMessage(
             "Please enter a mark between 0 and 100."
         );

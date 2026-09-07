@@ -146,11 +146,42 @@ nav a:hover {
 
 /* Student list */
 
-#studentlist {
+#studentList {
     margin-top: 25px;
+    text-align: center;
 }
  
 .statistics-section {
     margin-top: 50px;
     text-align: center;
+}
+
+/* better input focus */
+.student-form input:focus {
+    outline: none;
+    border-color: #4b2feb;
+    box-shadow: 0 0 0 3px rgba(75, 47, 235, 0.15);
+}
+
+/* card shadow */
+.student-form {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* success message */
+.msg-success {
+    background-color: #e6ffed;
+    color: #1a7f37;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* error message */
+.msg-error {
+    background-color: #fff0f0;
+    color: #d1242f;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
