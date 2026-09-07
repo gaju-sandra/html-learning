@@ -15,19 +15,29 @@ let students =
 
 
 // ===============================
+// SAVE STUDENTS
+// ===============================
+
+function saveStudents() {
+
+    localStorage.setItem(
+        "students",
+        JSON.stringify(students)
+    );
+
+}
+
+
+// ===============================
 // DISPLAY STUDENTS
 // ===============================
 
 function displayStudents() {
 
-    // Clear the table first
     studentTableBody.innerHTML = "";
 
-
-    // Go through every student
     students.forEach(function(student) {
 
-        // Create one table row
         studentTableBody.innerHTML += `
         
             <tr>
@@ -42,12 +52,12 @@ function displayStudents() {
 
                 <td>
 
-                    <button id="btn edit">
-                        Edit
+                    <button onclick="deleteStudent('${student.id}')">
+                        Delete
                     </button>
 
-                    <button id="btn delete">
-                        Delete
+                    <button onclick="updateStudent('${student.id}')">
+                        Edit
                     </button>
 
                 </td>
@@ -58,6 +68,55 @@ function displayStudents() {
 
     });
 
+}
+
+
+// ===============================
+// DELETE STUDENT
+// ===============================
+
+function deleteStudent(id) {
+
+    students = students.filter(function(student) {
+
+        return student.id !== id;
+
+    });
+
+    saveStudents();
+
+    displayStudents();
+
+}
+
+
+// ===============================
+// UPDATE STUDENT
+// ===============================
+
+function updateStudent(id) {
+
+    // We will add the update code here later.
+
+
+
+    let student = students.find(function(student) {
+
+        return student.id === id;
+
+    });
+
+    let newName = prompt("Enter new name:", student.name);
+
+    let newMark = prompt("Enter new mark:", student.mark);
+
+    student.name = newName;
+
+    student.mark = newMark;
+
+    saveStudents();
+
+    displayStudents();
 }
 
 
