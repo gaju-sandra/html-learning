@@ -69,7 +69,7 @@ function saveStudents() {
 addStudent.addEventListener("click", function() {
 
     // Get values from inputs
-    let id = Number(studentId.value);
+    let id = studentId.value.trim();
     let name = studentName.value.trim();
     let mark = Number(studentMark.value);
     
@@ -112,6 +112,7 @@ addStudent.addEventListener("click", function() {
 
     let student = {
 
+        id: id,
         name: name,
         mark: mark,
         result: getResult(mark)
@@ -146,6 +147,7 @@ addStudent.addEventListener("click", function() {
     // CLEAR INPUTS
     // ===============================
 
+    studentId.value="";
     studentName.value = "";
     studentMark.value = "";
 
