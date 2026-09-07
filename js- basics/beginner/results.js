@@ -126,6 +126,7 @@ function displayResults() {
         resultsList.innerHTML += `
 
             <div class="result-card">
+            <h3>${student.id}</h3>
 
                 <h3>${student.name}</h3>
 
