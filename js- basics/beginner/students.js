@@ -18,6 +18,18 @@ let students =
 // SAVE STUDENTS
 // ===============================
 
+function newGetResult(mark){
+     if (mark >= 50) {
+
+        return "Passed";
+
+    } else {
+
+        return "Failed";
+
+    }
+}
+
 function saveStudents() {
 
     localStorage.setItem(
@@ -96,28 +108,34 @@ function deleteStudent(id) {
 
 function updateStudent(id) {
 
-    // We will add the update code here later.
-
-
-
     let student = students.find(function(student) {
 
         return student.id === id;
 
     });
 
-    let newName = prompt("Enter new name:", student.name);
+    let newName = prompt(
+        "Enter new name:",
+        student.name
+    );
 
-    let newMark = prompt("Enter new mark:", student.mark);
+    let newMark = prompt(
+        "Enter new mark:",
+        student.mark
+    );
 
     student.name = newName;
 
-    student.mark = newMark;
+    student.mark = Number(newMark);
+
+    student.result = newGetResult(student.mark);
 
     saveStudents();
 
     displayStudents();
+
 }
+
 
 
 // ===============================
