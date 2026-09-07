@@ -244,3 +244,7 @@ td button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+#btn edit{
+    background-color:#4b2feb;
+}
