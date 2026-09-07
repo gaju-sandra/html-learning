@@ -42,11 +42,11 @@ function displayStudents() {
 
                 <td>
 
-                    <button>
+                    <button id="btn edit">
                         Edit
                     </button>
 
-                    <button>
+                    <button id="btn delete">
                         Delete
                     </button>
 
