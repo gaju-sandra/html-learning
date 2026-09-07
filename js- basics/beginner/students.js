@@ -1,65 +1,59 @@
+// ===============================
+// GET STUDENT TABLE
+// ===============================
 
-// ======================================================
-// STUDENTS PAGE
-// ======================================================
-
-
-// ======================================================
-// GET HTML ELEMENT
-// ======================================================
-
-let studentList =
-    document.getElementById("studentList");
+let studentTableBody =
+    document.getElementById("studentTableBody");
 
 
-// ======================================================
+// ===============================
 // GET STUDENTS FROM LOCAL STORAGE
-// ======================================================
+// ===============================
 
 let students =
     JSON.parse(localStorage.getItem("students")) || [];
 
 
-// ======================================================
+// ===============================
 // DISPLAY STUDENTS
-// ======================================================
+// ===============================
 
 function displayStudents() {
 
-    // Clear the previous content
-    studentList.innerHTML = "";
+    // Clear the table first
+    studentTableBody.innerHTML = "";
 
 
-    // ==================================================
-    // CHECK IF THERE ARE NO STUDENTS
-    // ==================================================
-
-    if (students.length === 0) {
-
-        studentList.innerHTML = `
-            <p>No students have been added yet.</p>
-        `;
-
-        return;
-    }
-
-
-    // ==================================================
-    // FOREACH()
-    // ==================================================
-
+    // Go through every student
     students.forEach(function(student) {
 
-        studentList.innerHTML += `
+        // Create one table row
+        studentTableBody.innerHTML += `
+        
+            <tr>
 
-            <div class="student-card">
+                <td>${student.id}</td>
 
-                <h3>${student.name}</h3>
+                <td>${student.name}</td>
 
-               
+                <td>${student.mark}</td>
 
-            </div>
+                <td>${student.result}</td>
 
+                <td>
+
+                    <button>
+                        Edit
+                    </button>
+
+                    <button>
+                        Delete
+                    </button>
+
+                </td>
+
+            </tr>
+        
         `;
 
     });
@@ -67,9 +61,8 @@ function displayStudents() {
 }
 
 
-// ======================================================
-// DISPLAY STUDENTS
-// ======================================================
+// ===============================
+// DISPLAY STUDENTS WHEN PAGE LOADS
+// ===============================
 
 displayStudents();
-

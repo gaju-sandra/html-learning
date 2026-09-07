@@ -189,3 +189,58 @@ nav a:hover {
 h3{
     text-transform:capitalize;
 }
+
+/* ===============================
+   STUDENTS PAGE
+================================ */
+
+.students-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.students-section h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.students-section p {
+    text-align: center;
+}
+
+
+/* ===============================
+   STUDENT TABLE
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #4b2feb;
+    color: white;
+}
+
+
+/* ===============================
+   ACTION BUTTONS
+================================ */
+
+td button {
+    padding: 8px 15px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
