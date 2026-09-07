@@ -74,6 +74,8 @@ addStudent.addEventListener("click", function() {
     let mark = Number(studentMark.value);
     
 
+//the uniqueness of the id
+
 
     // ===============================
     // VALIDATE EMPTY FIELDS
@@ -88,7 +90,22 @@ addStudent.addEventListener("click", function() {
 
         return;
     }
+// ===============================
+// CHECK ID UNIQUENESS
+// ===============================
 
+let idExists = students.some(function(student) {
+
+    return student.id === id;
+
+});
+
+if (idExists) {
+
+    displayMessage("Student ID already exists.");
+
+    return;
+}
 
     // ===============================
     // VALIDATE MARK
