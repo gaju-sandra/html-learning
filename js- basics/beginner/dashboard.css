@@ -185,3 +185,6 @@ nav a:hover {
     border-radius: 8px;
     margin-top: 10px;
 }
+h3{
+    text-transform:capitalize;
+}

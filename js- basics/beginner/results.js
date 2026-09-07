@@ -79,7 +79,7 @@ function displayResults() {
     else if (selectedFilter === "passed") {
 
         studentsToDisplay =
-            students.filter(function(student) {
+            students.filter(function (student) {
 
                 return student.result === "Passed";
 
@@ -95,7 +95,7 @@ function displayResults() {
     else if (selectedFilter === "failed") {
 
         studentsToDisplay =
-            students.filter(function(student) {
+            students.filter(function (student) {
 
                 return student.result === "Failed";
 
@@ -121,14 +121,15 @@ function displayResults() {
     // DISPLAY STUDENTS
     // ===============================
 
-    studentsToDisplay.forEach(function(student) {
+    studentsToDisplay.forEach(function (student) {
 
         resultsList.innerHTML += `
 
             <div class="result-card">
-            <h3>Id:${student.id}</h3>
-
+            
                 <h3>Name: ${student.name}</h3>
+
+                <p>Id:${student.id}</p>
 
                 <p>Mark: ${student.mark}</p>
 
@@ -147,7 +148,7 @@ function displayResults() {
 // FILTER CHANGE EVENT
 // ===============================
 
-resultFilter.addEventListener("change", function() {
+resultFilter.addEventListener("change", function () {
 
     displayResults();
 
