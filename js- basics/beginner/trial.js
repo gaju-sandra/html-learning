@@ -79,13 +79,11 @@ addStudent.addEventListener("click", function() {
     // VALIDATE EMPTY FIELDS
     // ===============================
 
-    if(id === ""){
-        displayMessage("plese enter the student id");
-    }
-    else if (name === "" || studentMark.value === "") {
+    
+    if (id ==="" || name === "" || studentMark.value === "") {
 
         displayMessage(
-            "Please enter both the name and mark."
+            "Please enter credentials."
         );
 
         return;
