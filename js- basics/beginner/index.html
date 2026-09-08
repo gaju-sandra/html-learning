@@ -49,14 +49,16 @@
                 <h2>Add Student</h2>
 
                 <p>Enter the student's information below.</p>
-                 <label for="studentId">Student Name</label>
-                <input 
+                 <label for="studentId">Student IDs</label>
+                <div id="errormessageId"></div>
+                 <input 
                     type="number" 
                     id="studentId" 
                     placeholder="Enter student ID"
                 >
 
                 <label for="studentName">Student Name</label>
+                <div id="errormessagename"></div>
                 <input 
                     type="text" 
                     id="studentName" 
@@ -64,6 +66,7 @@
                 >
 
                 <label for="studentMark">Student Mark</label>
+                <div id="errormessagemark"></div>
                 <input 
                     type="number" 
                     id="studentMark" 

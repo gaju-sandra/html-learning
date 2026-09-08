@@ -8,6 +8,9 @@ let studentMark = document.getElementById("studentMark");
 let addStudent = document.getElementById("addStudentBtn");
 let studentList = document.getElementById("studentlist");
 let studentId = document.getElementById("studentId");
+let errormessageId = document.getElementById("errormessageId");
+let errormessagename = document.getElementById("errormessagename");
+let errormessagemark = document.getElementById("errormessagemark");
 
 // ===============================
 // STUDENT ARRAY
@@ -27,8 +30,9 @@ function displayMessage(message) {
     studentList.innerHTML = `<p>${message}</p>`;
 
 }
+function errorMessage() {
 
-
+}
 // ===============================
 // GET STUDENT RESULT
 // ===============================
@@ -66,53 +70,82 @@ function saveStudents() {
 // ADD STUDENT
 // ===============================
 
-addStudent.addEventListener("click", function() {
+addStudent.addEventListener("click", function () {
 
     // Get values from inputs
     let id = studentId.value.trim();
     let name = studentName.value.trim();
     let mark = Number(studentMark.value);
-    
 
-//the uniqueness of the id
+
+    //the uniqueness of the id
 
 
     // ===============================
     // VALIDATE EMPTY FIELDS
     // ===============================
 
-    
-    if (id ==="" || name === "" || studentMark.value === "") {
+    if (id === "") {
+        errormessageId.innerHTML = "*Please enter student ID.";
+        studentId.value = "";
+        studentName.value = "";
+        studentMark.value = "";
+        return;
+    }
+    else if (name === "") {
+        errormessagename.innerHTML = "*Please enter student name.";
+        
+        studentName.value = "";
+        
+        return;
+    }
+    else if (studentMark.value === "") {
+        errormessagemark.innerHTML = "*Please enter student mark.";
+        
+        studentMark.value = "";
+        return;
+    }
 
-        displayMessage(
-            "Please enter credentials."
-        );
+
+    else if (id === "" & name === "" & studentMark.value === "") {
+
+        errorMessage()
+        {
+            errormessageId.innerHTML = "*Please enter student ID.";
+            errormessagename.innerHTML = "*Please enter student name.";
+            errormessagemark.innerHTML = "*Please enter student mark.";
+        }
 
         return;
     }
-// ===============================
-// CHECK ID UNIQUENESS
-// ===============================
 
-let idExists = students.some(function(student) {
+    // ===============================
+    // CHECK ID UNIQUENESS
+    // ===============================
 
-    return student.id === id;
+    let idExists = students.some(function (student) {
 
-});
+        return student.id === id;
 
-if (idExists) {
+    });
 
-    displayMessage("Student ID already exists.");
+    if (idExists) {
 
-    return;
-}
+        displayMessage("Student ID already exists.");
+        studentId.value = "";
+        studentName.value = "";
+        studentMark.value = "";
+
+        return;
+
+    }
 
     // ===============================
     // VALIDATE MARK
     // ===============================
 
     if (mark < 0 || mark > 100) {
-    
+
         displayMessage(
             "Please enter a mark between 0 and 100."
         );
@@ -162,7 +195,7 @@ if (idExists) {
     // CLEAR INPUTS
     // ===============================
 
-    studentId.value="";
+    studentId.value = "";
     studentName.value = "";
     studentMark.value = "";
 
